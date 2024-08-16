@@ -1,0 +1,20 @@
+debug repmat的语法变更
+视觉刺激的位置：外周or中央
+刺激间隔没有fixation会不会不利于维持注视点
+运动方向包括哪几个
+ITI改长度？
+时间要变长一些？
+test duration 改成0.6以保证test Frame num是整数？
+
+%1：trial_i              %10：试次开始时间=fixation呈现时间点
+%2：stim location        %11：生成运动刺激后时间点
+%3：test direction       %12：生成运动刺激需要时间,注意这个值要小于600ms
+%4：sample1 direction    %13：运动刺激1呈现时间点
+%5：sample2 direction    %14：刺激间隔1呈现时间点
+%6：cue                  %15：运动刺激2呈现时间点
+%7：subject response     %16：刺激间隔2呈现时间点
+%                           %17：cue呈现时间点
+%                           %18：delay呈现时间点
+%                           %19：test呈现时间点
+%8：correct or not       %20：试次长度
+%9：responce time        %21：coherence
